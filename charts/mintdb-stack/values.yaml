@@ -1,0 +1,16 @@
+image:
+  repository: eddique/mintdb-stack
+  tag: latest
+
+service:
+  port: 3000
+  targetPort: 3000
+
+persistence:
+  enabled: true
+  existingClaim: mintdb-data
+
+volume:
+  mountPath: /app
+
+replicas: 3

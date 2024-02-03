@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: {{ include "mintdb.fullname" . }}
+spec:
+  selector:
+    matchLabels:
+      {{- include "mintdb.labels" . | nindent 4 }}
+  serviceName: {{ include "mintdb.fullname" . }}
+  replicas: {{ .Values.replicas }}
+  template:
+    metadata:
+      labels:
+        {{- include "mintdb.selectorLabels" . | nindent 8 }}
+    spec:
+      containers:
+      - name: {{ .Chart.Name }}
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        ports:
+        - containerPort: {{ .Values.service.port }}
+          name: http
+        command: ["start", "/app/mint.db"]
+        volumeMounts:
+        - name: mintdb-data
+          mountPath: {{ .Values.volume.mountPath }}
+  volumeClaimTemplates:
+  - metadata:
+      name: mintdb-data
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: 1Gi
