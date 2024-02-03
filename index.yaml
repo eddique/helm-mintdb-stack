@@ -10,6 +10,6 @@ entries:
     name: mintdb-stack
     type: application
     urls:
-    - https://github.com/eddique/helm-mintdb-stack/mintdb-stack-0.1.0.tgz
+    - https://github.com/eddique/helm-mintdb-stack/charts/mintdb-stack/charts/mintdb-stack-0.1.0.tgz
     version: 0.1.0
 generated: "2024-02-03T15:43:47.797661-05:00"
