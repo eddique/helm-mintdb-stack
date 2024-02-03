@@ -19,7 +19,7 @@ spec:
         ports:
         - containerPort: {{ .Values.service.port }}
           name: http
-        command: ["start", "/app/mint.db"]
+        command: ["./mintdb-stack", "start", "/app/mint.db"]
         volumeMounts:
         - name: mintdb-data
           mountPath: {{ .Values.volume.mountPath }}
