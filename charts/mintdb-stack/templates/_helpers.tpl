@@ -8,11 +8,6 @@
 {{- default .Chart.Name .Values.nameOverride | trunc 63 | trimSuffix "-" }}
 {{- end -}}
 
-{{/* Common labels */}}
-{{- define "mintdb.labels" -}}
-{{ include "mintdb.selectorLabels" . }}
-{{- end -}}
-
 {{/* Selector labels */}}
 {{- define "mintdb.selectorLabels" -}}
 app: {{ include "mintdb.name" . }}
