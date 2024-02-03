@@ -3,13 +3,13 @@ entries:
   mintdb-stack:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-02-03T15:03:43.713002-05:00"
+    created: "2024-02-03T15:26:12.05692-05:00"
     description: A Helm chart for Kubernetes
-    digest: 37db634ed6d0d2f877f91f9acd37a54d2ff3d04282d55f929e8c9be50c945598
+    digest: 2b7503f2a31cbc961c71a315748a0c791a941eacc4291dd9aba30a2bf500f82d
     icon: https://picsum.photos/200
     name: mintdb-stack
     type: application
     urls:
     - https://github.com/eddique/helm-mintdb-stack/mintdb-stack-0.1.0.tgz
     version: 0.1.0
-generated: "2024-02-03T15:03:43.712535-05:00"
+generated: "2024-02-03T15:26:12.056317-05:00"
