@@ -10,15 +10,13 @@
 
 {{/* Common labels */}}
 {{- define "mintdb.labels" -}}
-helm.sh/chart: {{ include "mintdb.chart" . }}
 {{ include "mintdb.selectorLabels" . }}
-app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{- end -}}
 
 {{/* Selector labels */}}
 {{- define "mintdb.selectorLabels" -}}
-app.kubernetes.io/name: {{ include "mintdb.name" . }}
-app.kubernetes.io/instance: {{ .Release.Name }}
+app: {{ include "mintdb.name" . }}
+name: {{ .Release.Name }}
 {{- end -}}
 
 {{/* Chart label */}}
