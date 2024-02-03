@@ -5,13 +5,13 @@ metadata:
 spec:
   selector:
     matchLabels:
-      {{- include "mintdb.labels" . | nindent 4 }}
+      app: mintdb-stack
   serviceName: {{ include "mintdb.fullname" . }}
   replicas: {{ .Values.replicas }}
   template:
     metadata:
       labels:
-        {{- include "mintdb.selectorLabels" . | nindent 8 }}
+        app: mintdb-stack
     spec:
       containers:
       - name: {{ .Chart.Name }}

@@ -1,12 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "mintdb.fullname" . }}
-  labels:
-    {{- include "mintdb.labels" . | nindent 4 }}
+  name: mintdb-stack
 spec:
   selector:
-    {{- include "mintdb.selectorLabels" . | nindent 4 }}
+    app: mintdb-stack
   ports:
     - name: http
       protocol: TCP
