@@ -2,7 +2,7 @@
     <img width="400" src="./img/logo-light.png#gh-light-mode-only" alt="mintDB Logo">
     <img width="400" src="./img/logo.svg#gh-dark-mode-only" alt="mintDB Logo">
 </p>
-<h2 align="center">Helm chart An Open Source Vector Database</h2>
+<h2 align="center">The official Helm chart for mintDB Stack</h2>
 <p align="center">
     <a href="https://github.com/eddique/helm-mintdb-stack/releases/latest"><img src="https://img.shields.io/github/v/release/eddique/helm-mintdb-stack.svg"></a>
     <a href="https://img.shields.io/docker/pulls/eddique/mintdb-stack"><img src="https://img.shields.io/docker/pulls/eddique/mintdb-stack"></a>
