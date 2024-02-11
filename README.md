@@ -1,6 +1,6 @@
 <p align="center">
     <img width="400" src="./img/logo-light.png#gh-light-mode-only" alt="mintDB Logo">
-    <img width="400" src="./img/logo.svg#gh-dark-mode-only" alt="mintDB Logo">
+    <img width="400" src="./img/logo.png#gh-dark-mode-only" alt="mintDB Logo">
 </p>
 <h2 align="center">The official Helm chart for mintDB Stack</h2>
 <p align="center">
